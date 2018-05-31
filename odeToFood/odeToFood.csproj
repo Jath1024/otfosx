@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="Services\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\Home\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="EntityFramework" Version="6.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\index.html" />
+  </ItemGroup>
+</Project>
